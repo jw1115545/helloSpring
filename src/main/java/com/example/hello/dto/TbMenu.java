@@ -8,7 +8,7 @@ import lombok.Setter;
 public class TbMenu {
 
     private int id;
-    private String Menu;
+    private String menu;
     private int price;
     private String img;
 
