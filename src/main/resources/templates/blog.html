@@ -1,0 +1,19 @@
+{{>layout/header}}
+<div class="container">
+    <h2>블로그 검색</h2>
+    <form>
+        <div class="form-group">
+            <label for="keyword">검색:</label>
+            <input type="text" class="form-control" id="keyword" placeholder="메뉴 검색" name="keyword">
+        </div>
+
+        <button type="button" class="btn btn-primary" id="btn-save">검색</button>
+    </form>
+
+    <div id="bloglist"></div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="/js/blog.js"></script>
+</body>
+</html>

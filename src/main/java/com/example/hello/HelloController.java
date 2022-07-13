@@ -39,6 +39,16 @@ public class HelloController {
 
         return "see";
     }
+    @GetMapping("/best")
+    public String best() {
+
+        return "best";
+    }
+    @GetMapping("/blog")
+    public String blog() {
+
+        return "blog";
+    }
 
 
 

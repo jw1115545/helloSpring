@@ -1,8 +1,8 @@
 
 {{>layout/header}}
 <div class="container">
-    <h2>메뉴 입력</h2>
-    <form action="/insert" method="post">
+    <h2 style="text-align: center">메뉴 입력</h2>
+    <form>
         <div class="form-group">
             <label for="menu">메뉴 이름:</label>
             <input type="text" class="form-control" id="menu" placeholder="메뉴 이름 입력" name="menu">
@@ -16,7 +16,13 @@
             <input type="text" class="form-control" id="img" placeholder="이미지주소 입력" name="img">
         </div>
 
-        <button type="submit" class="btn btn-primary">메뉴 입력</button>
+        <a href="/" role="button" class="btn btn-secondary">취소</a>
+        <button type="submit" class="btn btn-primary" id="btn-save">메뉴 등록</button>
     </form>
 </div>
-{{>layout/footer}}
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="/js/insert.js"></script>
+<script src="/js/best/js"></script>
+</body>
+</html>

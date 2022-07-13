@@ -1,6 +1,7 @@
 package com.example.hello.service;
 
 import com.example.hello.repo.MenuRepository;
+import com.example.hello.utils.NaverApi;
 import com.example.hello.vo.MenuVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -19,10 +20,19 @@ public class MenuService {
         menuRepository.findAll().forEach(e -> menu.add(e));
         return menu;
     }
+    public String blogSearch(String keyword){
+        return NaverApi.blogSearch(keyword);
+
+    }
+
 
     // 데이터 넣기(insert)
-    public MenuVo save(MenuVo menu){
-        menuRepository.save(menu);
-        return menu;
+    public Long save(MenuVo menu){
+        return menuRepository.save(menu).getId();
+       // return menu;
+    }
+
+    public List<MenuVo> findRandMenu(){
+        return menuRepository.findRandMenu();
     }
 }
