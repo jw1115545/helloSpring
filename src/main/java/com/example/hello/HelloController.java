@@ -49,6 +49,11 @@ public class HelloController {
 
         return "blog";
     }
+    @GetMapping("/melon")
+    public String melon() {
+
+        return "melon";
+    }
 
 
 
